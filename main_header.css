@@ -1,0 +1,215 @@
+header {
+    height: 514px;
+    width: 100%;
+}
+
+header a {
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header .fnctWrap {
+    width: 1440px;
+    height: 64px;
+    background-color:#fff;
+}
+
+/* 해더: 탑 */
+header .fnctWrap .top {
+    width: 100%;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.inner {
+    width: 100%;
+    float: left;
+}
+
+.material-symbols-outlined {
+    color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding-top: 25px;
+}
+
+header .fnctWrap .search {
+    width: 100%;
+    height: 64px;
+    display: inline;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.search_child {
+    float: left;
+}
+
+header .top_link {
+    color: #000000;
+    font-size: 12px;
+}
+
+header .fnctWrap .mypage_setting {
+    float: right;
+    display: inline;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #000000;
+    color: #8a4a4a;
+}
+
+/* 헤더: 배너 */
+header .fnctWrap .header_bg {
+    height: 61px;
+    width: 100%;
+    background-color: #deefff;
+}
+
+header .gnb_bg {
+    width: 100%;
+    height: 90px;
+}
+
+header .inner .logo {
+    width: 300px;
+    padding: 0px 0;
+    float: left;
+    
+}
+
+header .header_bg .gnb_bg .header_menu {
+    height: 90px;
+    float: right;
+}
+
+header .header_bg .gnb_bg .header_bg .menuUItop {
+    width: 100%;
+}
+
+.menuTop_div {
+    width: 900px;
+    height: 90px;
+}
+
+.menuTop_ul{
+    height: 90px;
+    text-align: center;
+    position: relative;
+}
+
+.menuTop_list{
+    width: 20%;
+    height: 45px;
+    padding-top: 17px;
+    padding-bottom: 23px;
+    position: relative;
+
+    float: left;
+
+    font-size: 18px;
+    font-weight:800;
+}
+
+/* 해더: 페이지 이름 */
+header .fnctWrap .page_name {
+    width: 100%;
+    height: 200px;
+    font-size: 50px;
+    color: #fff;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+
+    font-weight: 600;
+}
+
+/* 헤더: 호버 */
+.hide_menu {
+    width: 100%;
+    height: 389px;
+    position: absolute;
+    top: 61px;
+    background-color:#f3f8fd;
+    display: none;
+}
+
+.menuTop_ul:hover .hide_menu{
+    display: block;
+    padding: 20px;
+    background-color: #f3f8fd;
+}
+
+.hide_menu .hide_menu_ul .hide_menu_list .hide_factor {
+    width: 180px;
+    height: 40px;
+    padding: 0;
+    color: #5f6468;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.hide_factor_text{
+    padding: 5px 5px;
+}
+
+.hide_menu .hide_menu_ul .hide_menu_list .hide_factor:hover {
+    color: #000000;
+    background-color:#f3f8fd; 
+    font-weight: bold;
+}
+
+.hide_hide_factor {
+    width: 100px;
+    height: 125px;
+    background-color: #60609f;
+    display: none;
+}
+
+.hide_factor:hover .hide_hide_factor {
+    display: block;
+}
+
+/* 호버의 호버 */
+.hide2_menu {
+    width: 180px;
+    height: 0px;
+    display:none;
+    position: relative;
+    left:100%;
+    top: -52px;
+    z-index: 1;
+}
+
+.hide_menu_list:hover .hide2_menu {
+    display:block;
+} 
+
+.hide2_menu .hide2_ul .hide2_li{
+    border-top: 1px solid #7f8386;
+    background-color: #5f6468;
+}
+
+.hide2_menu .hide2_ul .hide2_li .hide2_a {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 1px 0;
+}
+
+.hide2_menu .hide2_ul .hide2_li .hide2_a:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.hide2_menu:hover .hide_factor{
+    color: #fff;
+    background: color #f3f8fd;
+    font-weight: bold;
+}

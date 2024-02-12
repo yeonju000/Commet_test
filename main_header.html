@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더</title>
+    <!-- 브라우저 기본 스타일을 reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- index.html 페이지에 적용할 스타일시트로 main.css로 연결 -->
+    <link href="main_header.css?after" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+    <header id="header">
+        <div class="fnctWrap">
+            <!-- 로고, 검색, 마이페이지+설정-->
+            <div class="top">
+                <div class="inner">
+                    <div class="logo">
+                        <!-- 메인 링크 달기 -->
+                        <a href="./main_home_Page.html"> <!-- 로고 버튼 누르면 메인홈으로 오게-->
+                            <img class="logo_pic" src=""> <!-- 로고 이미지 링크 삽입하기!!!!!!! -->
+                        </a>
+                    </div>
+
+                    <!-- 검색 -->
+                    <ul class="search">
+                        <li class="search_child">
+                            <a href="" target="_blank" id="ico_arrow" class="top_link">
+                                <span>검색어를 입력하시오.</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- 마이페이지 -->
+                    <ul class="mypage_setting">
+                        <li>
+                            <!-- 마이페이지 링크 삽입하기 -->
+                            <a href="./mypage.html">
+                                <span class="material-symbols-outlined" style="color: rgb(rgb(0, 0, 0), rgb(0, 5, 0), rgb(0, 0, 0));">manage_accounts </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- 메인 네비바-->
+            <!-- 학과정보 - 학과 공지, 학과 캘린더-->
+            <!-- 게시판 - 선배들의 조언, 질문방, 팀원찾기, 수업후기 -->
+            <!-- 채팅 - 채팅 -->
+            <!-- 마이페이지 - 회원정보, 학점계산기, 등수계산기, 북마크, 작성 글, 작성 댓글-->
+
+            <!-- 네비바 -->
+            <div class="header_bg">
+                <div class="gnb_bg">
+                    <div class="inner">
+                        <div class="header_menu">
+                            <!-- 네비게이션 -->
+                            <!-- hide_menu_list 링크 추가하기 -->
+                            <nav id="menuUItop" class="menuUItop">
+                                <div class="menuTop_div">
+                                    <ul class="menuTop_ul">
+                                        <li class="menuTop_list" id="dp_info">
+                                            <!-- 학과공지 링크 삽입하기-->
+                                            <a href="" id="menuTop_li1" target="_self">학과정보</a> 
+                                            <div class="hide_menu" id="hide_menu_left">
+                                                <ul class="hide_menu_ul">
+                                                    <li class="hide_menu_list">
+                                                        <!-- 학과공지 링크 삽입하기-->
+                                                        <a href="" class="hide_factor" target="_self"> 
+                                                            <div class="hide_factor_text">학과공지</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                         <!-- 학과 캘린더 링크 삽입하기-->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">학과 캘린더</div>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menuTop_list" id="top_notice">
+                                            <!-- 선배들의 조언 게시판 링크 삽입하기-->
+                                            <a href="" id="menuTop_li1" target="_self">게시판</a>
+                                            <div class="hide_menu">
+                                                <ul class="hide_menu_ul">
+                                                    <li class="hide_menu_list">
+                                                         <!-- 선배들의 조언 게시판 링크 삽입하기-->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">선배들의 조언</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 팀원찾기 게시판 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">팀원찾기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 수업후기 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">수업 후기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 질문방 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">질문방</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menuTop_list" id="top_message">
+                                            <!-- 채팅 링크 삽입 -->
+                                            <a href="" id="menuTop_li1" target="_self">채팅</a> 
+                                            <div class="hide_menu">
+                                                <ul class="hide_menu_ul">
+                                                    <li class="hide_menu_list">
+                                                        <!-- 채팅 링크 삽입 -->
+                                                        <a href="" class="hide_factor" target="_self"> 
+                                                            <div class="hide_factor_text">채팅</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menuTop_list" id="top_mypage">
+                                             <!-- 마이페이지 링크 삽입 -->
+                                            <a href="" id="menuTop_li1" target="_self">마이페이지</a>
+                                            <div class="hide_menu">
+                                                <ul class="hide_menu_ul">
+                                                    <li class="hide_menu_list">
+                                                         <!-- 회원정보 링크 삽입-->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">회원정보</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 학점 계산기 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">학점 계산기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 등수 계산기 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">등수 계산기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 북마크 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">북마크</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 작성 글 링크 추가 -->
+                                                        <a href="./mypage_post.html" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">작성 글</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 작성 댓글 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">작성 댓글</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hide_menu_list">
+                                                        <!-- 설정 링크 추가 -->
+                                                        <a href="" class="hide_factor" target="_self">
+                                                            <div class="hide_factor_text">설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide_menu_back"></div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
